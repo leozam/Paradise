@@ -62,7 +62,7 @@
 		<init-param>
 			<!-- 密码 -->
 			<param-name>loginPassword</param-name>
-			<param-value>pazgd2363d</param-value>
+			<param-value>gj43g39De</param-value>
 		</init-param>
 	</servlet>
 	<servlet-mapping>
