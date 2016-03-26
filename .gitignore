@@ -1,4 +1,5 @@
 web/WEB-INF/web.xml
 custom/
+classes/
 .settings/
 .classpath
