@@ -9,7 +9,6 @@
 		<title>Paradise</title><link rel="shortcut icon" href="${base }/Favicon.ico" >
 		<link rel="stylesheet" type="text/css"
 			href="${base }/rs/css/style.css" />
-		<link type="text/css" rel="stylesheet" href="${base }/ckeditor/_samples/sample.css" />
 	</head>
 		<body>
 		<div id="wrap">
