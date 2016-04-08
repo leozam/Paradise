@@ -53,7 +53,7 @@ public class GetContentModule extends BaseModule
 	public Object queryMedia(@Param("type")String type, @Param("..")Pager pager, int page) {
 		pager.setPageNumber(page==0?1:page);
 		pager.setPageSize(10);
-		Cnd cnd = Strings.isBlank(type)? Cnd.where("1", "=", 1) : Cnd.where("type", "=", type);
+		Cnd cnd = Cnd.where("1", "=", 1);
 		cnd.orderBy("updateTime", "desc");
 		QueryResult qr = new QueryResult();
 		List<Media> ml = dao.query(Media.class, cnd, pager);
