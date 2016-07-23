@@ -103,6 +103,9 @@ public class UserModule extends BaseModule
 				Date date=dao.query(AccountRecord.class, cnd).get(1).getCreateTime();
 				Mvcs.getHttpSession().setAttribute("lastLoginTime", date);
 			}
+			UserProfile up=(UserProfile) dao.fetch(UserProfile.class,Long.valueOf
+					(Mvcs.getHttpSession().getAttribute("me").toString()));
+			Mvcs.getHttpSession().setAttribute("needTxt", up.getNeedTxt());
 		}
 		Mvcs.getHttpSession().setAttribute("uptPwdMsg", "(通过'记住我'登录时无法更改密码)");
 	}

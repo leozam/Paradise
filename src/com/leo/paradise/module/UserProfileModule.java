@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Date;
 
@@ -85,7 +86,19 @@ public class UserProfileModule extends BaseModule {
 			}
 		}
 		Daos.ext(dao, FieldFilter.create(UserProfile.class, null, "avatar", true)).update(profile);
+		Mvcs.getHttpSession().setAttribute("needTxt",profile.getNeedTxt() );
 	}
+    
+    @RequiresUser
+    @POST
+    @At("/updateTxt")
+    @Ok("jsp:/page/myaccount")
+    public void updateTxt(String needTxt,@Attr(scope=Scope.SESSION, value="me")int userId){
+    	UserProfile up=get(userId);
+    	needTxt=needTxt.trim();
+    	up.setNeedTxt(needTxt);
+    	update(up, userId);
+    }
 
     @RequiresUser
 	@AdaptBy(type=UploadAdaptor.class, args={"${app.root}/WEB-INF/tmp/user_avatar", "8192", "utf-8", "20000", "102400"})

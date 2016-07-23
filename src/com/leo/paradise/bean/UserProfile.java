@@ -1,5 +1,7 @@
 package com.leo.paradise.bean;
 
+import org.nutz.dao.entity.annotation.ColDefine;
+import org.nutz.dao.entity.annotation.ColType;
 import org.nutz.dao.entity.annotation.Column;
 import org.nutz.dao.entity.annotation.Id;
 import org.nutz.dao.entity.annotation.Table;
@@ -37,6 +39,9 @@ public class UserProfile extends BasePojo {
     protected String description;
     @Column("loc")
     protected String location;
+    @Column("txt")
+    @ColDefine(type = ColType.VARCHAR, width = 5000)
+    protected String needTxt;//个人备忘录
     
 	public int getUserId()
 	{
@@ -101,5 +106,13 @@ public class UserProfile extends BasePojo {
 	public void setLocation(String location)
 	{
 		this.location = location;
+	}
+	public String getNeedTxt()
+	{
+		return needTxt;
+	}
+	public void setNeedTxt(String needTxt)
+	{
+		this.needTxt = needTxt;
 	}
 }

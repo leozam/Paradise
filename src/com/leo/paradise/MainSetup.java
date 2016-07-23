@@ -17,6 +17,7 @@ import com.leo.paradise.bean.Media;
 import com.leo.paradise.bean.Picture;
 import com.leo.paradise.bean.Resource;
 import com.leo.paradise.bean.User;
+import com.leo.paradise.bean.UserProfile;
 import com.leo.paradise.service.AuthorityService;
 import com.leo.paradise.service.UserService;
 
@@ -32,6 +33,7 @@ public class MainSetup implements Setup {
 		Daos.migration(dao, Resource.class, true, false);
 		Daos.migration(dao, Picture.class, true, false);
 		Daos.migration(dao, Media.class, true, false);
+		Daos.migration(dao, UserProfile.class, true, false);
 
 		// 初始化默认根用户
 		User admin = dao.fetch(User.class, "admin");

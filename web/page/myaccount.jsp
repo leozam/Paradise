@@ -148,6 +148,17 @@
 							<fmt:formatDate value="${lastLoginTime }" type="both" />  
 							</p>
 							</c:if>
+							
+							<form id="needTxtForm" method="post" action="${base }/user/profile/updateTxt">
+							<label style="text-align: right;">
+									<strong>备忘录</strong>
+								</label><br/>
+								<textarea rows="20" cols="63" class="contact_input" name="needTxt">
+								${needTxt }
+								</textarea><br/><br/>
+								<input type="submit" class="register" value="提交">
+							</form>
+							<br><br>
 							<hr>
 							<p>
 							<form id="uptPwdForm" method="post" action="${base }/user/uptPwd">
