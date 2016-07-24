@@ -34,8 +34,6 @@ public class RememberMeAuthenticationFilter extends FormAuthenticationFilter
 				int userId = Integer.valueOf(subject.getPrincipal().toString());
 				//在这个方法里面做初始化用户上下文的事情，比如通过查询数据库来设置session值
 				session.setAttribute("me", userId);
-				UserProfile up=(UserProfile) dao.fetch(UserProfile.class,userId);
-				session.setAttribute("needTxt", up.getNeedTxt());
 			}
 		}
 		//这个方法本来只返回 subject.isAuthenticated() 现在我们加上 subject.isRemembered() 让它同时也兼容remember这种情况

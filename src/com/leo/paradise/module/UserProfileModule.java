@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Date;
 
@@ -89,7 +88,6 @@ public class UserProfileModule extends BaseModule {
 		Mvcs.getHttpSession().setAttribute("needTxt",profile.getNeedTxt() );
 	}
     
-    @RequiresUser
     @POST
     @At("/updateTxt")
     @Ok("jsp:/page/myaccount")

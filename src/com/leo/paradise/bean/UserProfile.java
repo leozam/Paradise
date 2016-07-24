@@ -115,4 +115,7 @@ public class UserProfile extends BasePojo {
 	{
 		this.needTxt = needTxt;
 	}
+	public UserProfile()
+	{
+	}
 }

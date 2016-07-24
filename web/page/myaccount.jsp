@@ -148,16 +148,17 @@
 							<fmt:formatDate value="${lastLoginTime }" type="both" />  
 							</p>
 							</c:if>
-							
+							<c:if test="${empty needTxt}"><a href="${base }/user/login">展开备忘录</a></c:if>
+							<c:if test="${not empty needTxt}">
+							<a href="#">备忘录</a>
 							<form id="needTxtForm" method="post" action="${base }/user/profile/updateTxt">
-							<label style="text-align: right;">
-									<strong>备忘录</strong>
-								</label><br/>
+							<br/>
 								<textarea rows="20" cols="63" class="contact_input" name="needTxt">
 								${needTxt }
 								</textarea><br/><br/>
 								<input type="submit" class="register" value="提交">
 							</form>
+							</c:if>
 							<br><br>
 							<hr>
 							<p>
