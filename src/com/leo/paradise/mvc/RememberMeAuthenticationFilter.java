@@ -9,8 +9,6 @@ import org.apache.shiro.web.filter.authc.FormAuthenticationFilter;
 import org.nutz.dao.Dao;
 import org.nutz.ioc.loader.annotation.Inject;
 
-import com.leo.paradise.bean.UserProfile;
-
 public class RememberMeAuthenticationFilter extends FormAuthenticationFilter
 {
 	@Inject protected Dao dao;

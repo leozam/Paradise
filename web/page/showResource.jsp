@@ -93,25 +93,25 @@
 									src="${base}/rs/images/pet/bullet4.gif" alt="" title="" /> </span>这是啥？
 						</div>
 						<div class="new_prod_box">
-							<a href="details.jsp">不知道啥</a>
+							<a href="#">不知道啥</a>
 							<div class="new_prod_bg">
-								<a href="details.jsp"><img
+								<a href="#"><img
 										src="${base}/rs/images/pet/thumb1.gif" alt="" title=""
 										class="thumb" border="0" /> </a>
 							</div>
 						</div>
 						<div class="new_prod_box">
-							<a href="details.jsp">不知道啥</a>
+							<a href="#">不知道啥</a>
 							<div class="new_prod_bg">
-								<a href="details.jsp"><img
+								<a href="#"><img
 										src="${base}/rs/images/pet/thumb2.gif" alt="" title=""
 										class="thumb" border="0" /> </a>
 							</div>
 						</div>
 						<div class="new_prod_box">
-							<a href="details.jsp">不知道啥</a>
+							<a href="#">不知道啥</a>
 							<div class="new_prod_bg">
-								<a href="details.jsp"><img
+								<a href="#"><img
 										src="${base}/rs/images/pet/thumb3.gif" alt="" title=""
 										class="thumb" border="0" /> </a>
 							</div>

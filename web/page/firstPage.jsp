@@ -127,7 +127,7 @@
 						<div class="new_prod_box">
 							<a href="#">D</a>
 							<div class="new_prod_bg">
-								<a href="details.jsp"><img
+								<a href="#"><img
 										src="${base}/rs/images/pet/thumb1.gif" alt="" title=""
 										class="thumb" border="0" /> </a>
 							</div>
@@ -135,7 +135,7 @@
 						<div class="new_prod_box">
 							<a href="#">O</a>
 							<div class="new_prod_bg">
-								<a href="details.jsp"><img
+								<a href="#"><img
 										src="${base}/rs/images/pet/thumb1.gif" alt="" title=""
 										class="thumb" border="0" /> </a>
 							</div>
@@ -143,7 +143,7 @@
 						<div class="new_prod_box">
 							<a href="#">G</a>
 							<div class="new_prod_bg">
-								<a href="details.jsp"><img
+								<a href="#"><img
 										src="${base}/rs/images/pet/thumb1.gif" alt="" title=""
 										class="thumb" border="0" /> </a>
 							</div>

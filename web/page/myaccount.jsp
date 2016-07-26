@@ -142,7 +142,8 @@
 							</form>
 						</div>
 						<div id="user_info_div">
-							<p id="userInfo">您的Id是${me }</p>
+							<p id="userInfo">您的Id是${me },更多功能请进入
+							<a href="${base }/page/myFunc/funcMain.jsp">功能大全</a></p>
 							<c:if test="${lastLoginTime !=null }">
 							<p>您上一次登录是在 
 							<fmt:formatDate value="${lastLoginTime }" type="both" />  
@@ -231,7 +232,7 @@
 						<div class="new_prod_box">
 							<a href="#">D</a>
 							<div class="new_prod_bg">
-								<a href="details.jsp"><img
+								<a href="#"><img
 										src="${base}/rs/images/pet/thumb1.gif" alt="" title=""
 										class="thumb" border="0" /> </a>
 							</div>
@@ -239,7 +240,7 @@
 						<div class="new_prod_box">
 							<a href="#">O</a>
 							<div class="new_prod_bg">
-								<a href="details.jsp"><img
+								<a href="#"><img
 										src="${base}/rs/images/pet/thumb1.gif" alt="" title=""
 										class="thumb" border="0" /> </a>
 							</div>
@@ -247,7 +248,7 @@
 						<div class="new_prod_box">
 							<a href="#">G</a>
 							<div class="new_prod_bg">
-								<a href="details.jsp"><img
+								<a href="#"><img
 										src="${base}/rs/images/pet/thumb1.gif" alt="" title=""
 										class="thumb" border="0" /> </a>
 							</div>

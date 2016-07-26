@@ -102,10 +102,6 @@
 					<a href="#">contact us</a>
 				</div>
 			</div>
-              
-    
-
 </div>
-
 </body>
 </html>

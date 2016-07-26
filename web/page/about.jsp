@@ -71,26 +71,26 @@
              
              	<div class="title"><span class="title_icon"><img src="${base}/rs/images/pet/bullet4.gif" alt="" title="" /></span>Promotions</div> 
                     <div class="new_prod_box">
-                        <a href="details.jsp">product name</a>
+                        <a href="#">product name</a>
                         <div class="new_prod_bg">
                         <span class="new_icon"><img src="${base}/rs/images/pet/promo_icon.gif" alt="" title="" /></span>
-                        <a href="details.jsp"><img src="${base}/rs/images/pet/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
+                        <a href="#"><img src="${base}/rs/images/pet/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
                         </div>           
                     </div>
                     
                     <div class="new_prod_box">
-                        <a href="details.jsp">product name</a>
+                        <a href="#">product name</a>
                         <div class="new_prod_bg">
                         <span class="new_icon"><img src="${base}/rs/images/pet/promo_icon.gif" alt="" title="" /></span>
-                        <a href="details.jsp"><img src="${base}/rs/images/pet/thumb2.gif" alt="" title="" class="thumb" border="0" /></a>
+                        <a href="#"><img src="${base}/rs/images/pet/thumb2.gif" alt="" title="" class="thumb" border="0" /></a>
                         </div>           
                     </div>                    
                     
                     <div class="new_prod_box">
-                        <a href="details.jsp">product name</a>
+                        <a href="#">product name</a>
                         <div class="new_prod_bg">
                         <span class="new_icon"><img src="${base}/rs/images/pet/promo_icon.gif" alt="" title="" /></span>
-                        <a href="details.jsp"><img src="${base}/rs/images/pet/thumb3.gif" alt="" title="" class="thumb" border="0" /></a>
+                        <a href="#"><img src="${base}/rs/images/pet/thumb3.gif" alt="" title="" class="thumb" border="0" /></a>
                         </div>           
                     </div>             
              
