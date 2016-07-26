@@ -26,6 +26,8 @@ public class ParadiseNutFilter extends NutFilter {
 
 	@Override
 	public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
+		req.setCharacterEncoding("utf-8");
+		resp.setCharacterEncoding("utf-8");
 		if (req instanceof HttpServletRequest) {
 			String uri = ((HttpServletRequest) req).getRequestURI();
 			for (String prefix : prefixs) {
